@@ -942,7 +942,9 @@
         }
     );
     NoSyncHaveWarnedAboutPasteConfirmationChange = 1;
+    NoSyncInstallationId = "EC6A76CF-32EA-43F6-B809-D918BA4452CD";
     NoSyncPermissionToShowTip = 0;
+    NoSyncTimeOfFirstLaunchOfVersionWithTip = "532466407.110431";
     PointerActions =     {
         "Button,1,1,," =         {
             Action = kContextMenuPointerAction;
