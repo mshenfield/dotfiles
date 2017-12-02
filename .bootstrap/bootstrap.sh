@@ -57,7 +57,7 @@ formulas=(
   # Updated Python2 for legacy apps and libs
   python2
   # Groovy Python3 for cool new apps and libs
-  "python3 --devel"
+  python3
   # rc file manager
   thoughtbot/formulae/rcm
   # Spotify command line API
