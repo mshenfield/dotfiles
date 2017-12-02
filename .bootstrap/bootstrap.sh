@@ -2,6 +2,9 @@
 
 # Install the XCode Command Line Tools
 function install_xcode() {
+  # Exit if already installed
+  xcode-select --print-path && return 0
+
   # Prompt user to install the XCode Command Line Tools
   xcode-select --install &> /dev/null
 
