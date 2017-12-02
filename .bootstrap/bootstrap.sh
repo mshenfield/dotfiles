@@ -105,7 +105,7 @@ atom_packages=(
 # Python - packages that aren't available via Homebrew
 python3_packages=(
   # Python Language Server - backend for the Atom ide-python package
-  pyls
+  python-language-server
 )
 
 # ~ - Extra not-dot home directories
