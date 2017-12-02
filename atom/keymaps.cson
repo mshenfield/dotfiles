@@ -1,0 +1,10 @@
+'atom-text-editor':
+  # Shortcut to toggle line number gutter
+  'alt-cmd-l': 'editor:toggle-line-numbers'
+
+  # Shortcut for notes
+  'alt-cmd-n': 'atom-notes:toggle'
+
+'atom-workspace':
+  # Project folder shortcuts
+  'cmd-shift-o': 'project-folder:add'
