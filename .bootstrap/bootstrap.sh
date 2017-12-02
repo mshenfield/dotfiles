@@ -127,7 +127,7 @@ brew install "${formulas[@]}"
 brew cask install "${casks[@]}"
 
 # Atom
-apm install --production "${atom_packages[@]}"
+apm-beta install --production "${atom_packages[@]}"
 
 # Python3
 pip3 install "${python3_packages[@]}"
