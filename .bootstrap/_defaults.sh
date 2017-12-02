@@ -3,11 +3,6 @@
 # Adapted from
 # * https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 # * https://github.com/nicksp/dotfiles/blob/master/osx/set-defaults.sh
-
-
-# Ask for the administrator password upfront
-sudo -v
-
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################

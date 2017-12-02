@@ -11,6 +11,9 @@ function install_xcode() {
   done
 }
 
+# Ask for the administrator password upfront
+sudo -v
+
 # Install basic dependencies
 # XCode
 install_xcode
