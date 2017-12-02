@@ -19,6 +19,7 @@ The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thought
 * set file extensions to to be opened with `Atom` (json, yaml, py, rb, txt, md, sh, zsh)
 * direnv - automatically shell into `pipenv` if shell into directory w/ it
 * Turn on night shift
+* Automatically enable accessibility access for spectacle
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
