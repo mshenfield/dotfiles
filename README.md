@@ -9,7 +9,7 @@ The installation script installs this repository into `~/.dotfiles`, symlinks my
 * [Atom](https://atom.io) - a hackable text editor with [my settings](atom) and [preferred packages](.bootstrap/bootstrap.sh#L72)
 * [Firefox Nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly) - a web browser that you can pat yourself on the back about
 * [iTerm2](https://iterm2.com/) - a fancy(er) terminal emulator for MacOS with some [hackily preserved settings](.bootstrap/_iterm2.defaults)
-* [oh-my-zsh](http://ohmyz.sh/) - a community driven zsh framework, with sensible [config](zshrc)[uration](oh-my-zsh/custom)
+* [oh-my-zsh](http://ohmyz.sh/) - a community driven zsh framework, with sensible [installation](.bootstrap/bootstrap.sh#L23) and [config](zshrc)[uration](oh-my-zsh/custom)
 * [MacOS defaults](.bootstrap/defaults.sh) - includes [minimal tray icons](.bootstrap/_defaults.sh#L48-L64)
 
 The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thoughtbot.github.io/rcm/rcm.7.html). The [.bootstrap](.bootstrap) directory and [README](README.md) are excluded from symlinking.
