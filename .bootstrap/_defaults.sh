@@ -289,7 +289,7 @@ sudo mdutil -E / > /dev/null
 
 # Copy over custom color settings, profiles, and terminal wide defaults
 # HACK: Dump the result of running `defaults read com.google.iterm2` on my current machine
-defaults write com.google.iterm2 \'$(cat ~/.dotfiles/.bootstrap/iterm2defaults)\'
+defaults write com.google.iterm2 \'$(cat ~/.dotfiles/.bootstrap/_iterm2.defaults)\'
 
 ###############################################################################
 # TextEdit                                                                    #
