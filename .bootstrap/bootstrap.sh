@@ -11,6 +11,9 @@ function install_xcode() {
   done
 }
 
+# Exit after errors and print commands
+set -e -v
+
 # Ask for the administrator password upfront
 sudo -v
 
