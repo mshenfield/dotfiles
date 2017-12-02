@@ -12,14 +12,12 @@ function install_xcode() {
 }
 
 # Install basic dependencies
-installs=(
-  # XCode
-  'install_xcode'
-  # Homebrew
-  'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-  # oh-my-zsh doesn't have a Homebrew formula
-  'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
-)
+# XCode
+install_xcode
+# Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# oh-my-zsh doesn't have a Homebrew formula
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Homebrew taps - additional taps to enable Cask support for applications,
 # fonts, and alternative release channels via `brew tap`
