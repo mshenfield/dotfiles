@@ -57,7 +57,7 @@ formulas=(
   # Updated Python2 for legacy apps and libs
   python2
   # Groovy Python3 for cool new apps and libs
-  python3 --devel
+  "python3 --devel"
   # rc file manager
   thoughtbot/formulae/rcm
   # Spotify command line API
@@ -120,10 +120,14 @@ for tap in $taps; do
 done
 
 # Formulas
-brew install "${formulas[@]}"
+for formula in "${formulas[@]}"; do
+  brew install $formula
+done
 
 # Casks
-brew cask install "${casks[@]}"
+for cask in "${casks[@]}"; do
+  brew cask install $cask
+done
 
 # Atom
 apm-beta install --production "${atom_packages[@]}"
