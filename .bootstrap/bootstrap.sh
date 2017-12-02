@@ -100,21 +100,6 @@ not_dots=(
   code
 )
 
-# Wishlist
-# * re-map caps lock to control
-# * set file extensions to to be opened with Atom (json, yaml, py, rb, txt, md, sh, zsh)
-# * direnv - automatically shell into `pipenv` if shell into directory w/ it
-
-# Install X-Code
-# iTerm Plist, custom Powerline font, and custom theme
-# Menu bar: hide the Time Machine, Volume, User, Bluetooth, Spotlight, and AirPlay icons, set clock to 24h,
-# Spotify preferences: increased music quality, hidden sidebar, save a few favorite albums
-# Turn on night shift
-
-for cmd in $installs; do
-  $cmd
-done
-
 # Taps
 brew tap "${taps[@]}"
 

@@ -14,5 +14,11 @@ The installation script installs this repository into `~/.dotfiles`, symlinks my
 
 The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thoughtbot.github.io/rcm/rcm.7.html). The [.bootstrap](.bootstrap) directory and [README](README.md) are excluded from symlinking.
 
+## Wishlist
+* re-map caps lock to control
+* set file extensions to to be opened with `Atom` (json, yaml, py, rb, txt, md, sh, zsh)
+* direnv - automatically shell into `pipenv` if shell into directory w/ it
+* Turn on night shift
+
 ## License
 [MIT](https://opensource.org/licenses/MIT)
