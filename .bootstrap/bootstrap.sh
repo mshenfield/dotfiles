@@ -115,7 +115,7 @@ not_dots=(
 )
 
 # Taps
-for tap in $taps; do
+for tap in "${taps[@]}"; do
   brew tap $tap
 done
 
