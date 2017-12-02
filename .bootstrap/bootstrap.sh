@@ -146,3 +146,6 @@ source ~/.dotfiles/.bootstrap/_defaults.sh
 # Symlink the actual dotfiles. All files/folders starting w/ a dot are
 # automatically ignored by `rcup`, and the directory defaults to ~/.dotfiles
 rcup -x README.md
+
+# Restart
+sudo shutdown -r now
