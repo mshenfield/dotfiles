@@ -123,7 +123,7 @@ done
 
 # Casks
 for cask in $casks; do
-  brew install $cask
+  brew cask install $cask
 done
 
 # Atom
