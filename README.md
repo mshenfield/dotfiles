@@ -26,6 +26,7 @@ The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thought
   * Show username and password
   * Disallow guest users
   * Disable fast switching menu item
+* [Tap to click](.bootstrap/_defaults.sh#L78) doesn't work
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)

@@ -32,8 +32,7 @@
     executablePath: "/Users/mshenfield/.pyenv/shims/flake8"
   "project-folder":
     projectRootDirectories: [
-      "/Users/mshenfield/code"
-      "/Users/mshenfield/eventbrite"
+      "~/code"
     ]
   "project-plus":
     projectHome: "~/eventbrite"

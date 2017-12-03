@@ -1,3 +1,5 @@
+echo "Getting things ready..."
+
 export ZSH=/Users/mshenfield/.oh-my-zsh
 
 ZSH_THEME="bullet-train"
@@ -15,13 +17,9 @@ plugins=(
   colorize
   docker
   gitfast
-  jira
   osx
   pip
   yarn
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
