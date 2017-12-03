@@ -159,9 +159,6 @@ for not_dot in $not_dots; do
   mkdir -p ~/$not_dot
 done
 
-# Needs ~/code to be there
-install_bullet_train
-
 # Clone or pull dotfiles to ~/.dotfiles
 git clone https://github.com/mshenfield/dotfiles ~/.dotfiles ||
 pushd ~/.dotfiles && git pull && popd
@@ -172,6 +169,9 @@ source ~/.dotfiles/.bootstrap/_defaults.sh
 # Symlink the actual dotfiles. All files/folders starting w/ a dot are
 # automatically ignored by `rcup`, and the directory defaults to ~/.dotfiles
 rcup -x README.md
+
+# Requires ~/code and ~/.oh-my-zsh/themes
+install_bullet_train
 
 # Optionally restart
 read -p 'Installation complete! Do you want to restart [y/N]' should_restart
