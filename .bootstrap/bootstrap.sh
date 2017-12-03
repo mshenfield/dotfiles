@@ -20,11 +20,12 @@ function install_xcode() {
 
 # Install the Bullet Train zsh theme
 function install_bullet_train() {
-  # Clone and symlink the theme file so it can be kept up to date
-  git clone https://github.com/caiogondim/bullet-train.zsh ~/code/bullet-train.zsh
+  # Clone or update the bullet train theme
+  git clone https://github.com/caiogondim/bullet-train.zsh ~/code/bullet-train.zsh || \
+  pushd ~/code/bullet-train.zsh && git pull && popd
 
   # Link the theme into the oh-my-zsh custom themes directory
-  ln -s ~/code/bullet-train.zsh/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
+  ln -sf ~/code/bullet-train.zsh/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/
 }
 
 ##############################################
@@ -159,8 +160,9 @@ done
 # Needs ~/code to be there
 install_bullet_train
 
-# Clone dotfiles to ~/.dotfiles
-git clone https://github.com/mshenfield/dotfiles ~/.dotfiles
+# Clone or pull dotfiles to ~/.dotfiles
+git clone https://github.com/mshenfield/dotfiles ~/.dotfiles ||
+pushd ~/.dotfiles && git pull && popd
 
 # MacOS defaults
 source ~/.dotfiles/.bootstrap/_defaults.sh
@@ -169,5 +171,8 @@ source ~/.dotfiles/.bootstrap/_defaults.sh
 # automatically ignored by `rcup`, and the directory defaults to ~/.dotfiles
 rcup -x README.md
 
-# Restart
-sudo shutdown -r now
+# Optionally restart
+read -p 'Installation complete! Do you want to restart [y/N]' should_restart
+if [ "$should_restart" = "y" ]; then
+  sudo shutdown -r now
+fi
