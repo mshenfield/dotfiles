@@ -15,11 +15,17 @@ The installation script installs this repository into `~/.dotfiles`, symlinks my
 The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thoughtbot.github.io/rcm/rcm.7.html). The [.bootstrap](.bootstrap) directory and [README](README.md) are excluded from symlinking.
 
 ## Wishlist
-* re-map caps lock to control
-* set file extensions to to be opened with `Atom` (json, yaml, py, rb, txt, md, sh, zsh)
-* direnv - automatically shell into `pipenv` if shell into directory w/ it
-* Turn on night shift
-* Automatically enable accessibility access for spectacle
+* Map Caps Lock to Control key
+* Set file extensions to to be opened with `Atom` (json, yaml, py, rb, txt, md, sh, zsh)
+* [`direnv`](https://direnv.net/) - configure to automatically shell into `pipenv` when `cd`ing into a `Pipenv` directory
+* Turn on [night shift](https://support.apple.com/en-us/HT207513)
+* Automatically enable accessibility access for Spectacle.app
+* Configure Spectacle to start at login and run as background app
+* Login options
+  * Custom icon on login screen
+  * Show username and password
+  * Disallow guest users
+  * Disable fast switching menu item
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
