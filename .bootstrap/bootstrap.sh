@@ -36,19 +36,6 @@ set -e -v
 # Ask for the administrator password upfront
 sudo -v
 
-# Install basic dependencies
-# XCode
-install_xcode
-# Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# oh-my-zsh - no Homebrew formula
-# Run in a subshell - the installation script spawns a new shell at the end so
-# this lets us avoid manually exiting
-(
-  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-)
-
 # Homebrew taps - additional taps to enable Cask support for applications,
 # fonts, and alternative release channels via `brew tap`
 taps=(
@@ -128,6 +115,19 @@ python3_packages=(
 not_dots=(
   # I keep my code in ~/code
   code
+)
+
+# XCode
+install_xcode
+
+# Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# oh-my-zsh (no Homebrew formula)
+(
+  # Run in a subshell - the installation script spawns a new shell at the end so
+  # this lets us avoid manually exiting
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 )
 
 # Taps
