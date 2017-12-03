@@ -1,7 +1,10 @@
+[atom "open-on-github"]
+        remote = origin
+[core]
+        editor = vim
+        excludesfile = ~/.gitignore
 [branch]
         autosetuprebase = always
 [user]
         name = Max Shenfield
         email = shenfieldmax@gmail.com
-[atom "open-on-github"]
-        remote = origin
