@@ -23,8 +23,8 @@ function install_bullet_train() {
   # Clone and symlink the theme file so it can be kept up to date
   git clone https://github.com/caiogondim/bullet-train.zsh ~/code/bullet-train.zsh
 
-  # Link to the oh-my-zsh themes dir
-  ln -s ~/code/bullet-train.zsh/ ~/.oh-my-zsh/custom/themes/
+  # Link the theme into the oh-my-zsh custom themes directory
+  ln -s ~/code/bullet-train.zsh/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme
 }
 
 ##############################################
