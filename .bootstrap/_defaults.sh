@@ -156,9 +156,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 Privileges -bool true
 
 # Don't display anything by default on Desktop
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 # Spawn new tabs instead of windows
 defaults write com.apple.finder FinderSpawnTab -bool true
