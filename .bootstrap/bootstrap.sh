@@ -164,7 +164,7 @@ git clone https://github.com/mshenfield/dotfiles ~/.dotfiles ||
 pushd ~/.dotfiles && git pull && popd
 
 # MacOS defaults
-source ~/.dotfiles/.bootstrap/_defaults.sh
+source ~/.dotfiles/.bootstrap/macos-defaults.sh
 
 # Symlink the actual dotfiles. All files/folders starting w/ a dot are
 # automatically ignored by `rcup`, and the directory defaults to ~/.dotfiles
