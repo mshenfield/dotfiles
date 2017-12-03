@@ -285,9 +285,47 @@ sudo mdutil -E / > /dev/null
 # iTerm 2                                                                     #
 ###############################################################################
 
-# Copy over custom color settings, profiles, and terminal wide defaults
-# HACK: Dump the result of running `defaults read com.google.iterm2` on my current machine
-defaults write com.google.iterm2 -dict "$(cat ~/.dotfiles/.bootstrap/_iterm2.defaults)"
+# Symlink in a dynamic profile for most settings http://iterm2.com/documentation-dynamic-profiles.html
+ln -s ~/.dotfiles/.bootstrap/iterm2/dynamic-profiles.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/profiles.json
+
+# Set the default profile to our "Driver" dynamic profile
+defaults write com.googlecode.iterm2 "Default Bookmark Guid" -string FBE252EF-A051-41B2-B701-FB0CD8FC5789
+
+# Enable two finger touch to scroll terminal apps
+defaults write com.googlecode.iterm2 AlternateMouseScroll -bool true
+
+# Show an icon indicating a proxied connection in the title bar
+defaults write com.googlecode.iterm2 EnableProxyIcon -bool true
+
+# Hide the menu bar in full screen
+defaults write com.googlecode.iterm2 HideMenuBarInFullscreen -bool true
+
+# Keep the scroll bar visible
+defaults write com.googlecode.iterm2 HideScrollbar -bool false
+
+# Hide the top bar in full screen when there is only one tab
+defaults write com.googlecode.iterm2 HideTab -bool true
+
+# Hide tab close buttons (prefer Cmd + w)
+defaults write com.googlecode.iterm2 HideTabCloseButton -bool true
+
+# Hide tab number
+defaults write com.googlecode.iterm2 HideTabNumber -bool true
+
+# Show current job name in window and tab titles
+defaults write com.googlecode.iterm2 JobName -bool true
+
+# Enable automatic software update checks
+defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -bool true
+
+# Show per pane titles with split panes
+defaults write com.googlecode.iterm2 ShowPaneTitles -bool true
+
+# Stetch tabs titles to fill the bar
+defaults write com.googlecode.iterm2 StretchTabsToFillBar -bool true
+
+# Dark tab theme
+defaults write com.googlecode.iterm2 TabStyle -bool true
 
 ###############################################################################
 # TextEdit                                                                    #
