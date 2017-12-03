@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+##############################################
+# Helpers                                    #
+##############################################
+
 # Install the XCode Command Line Tools
 function install_xcode() {
   # Exit if already installed
@@ -14,6 +18,18 @@ function install_xcode() {
   done
 }
 
+# Install the Bullet Train zsh theme
+function install_bullet_train() {
+  # Clone and symlink the theme file so it can be kept up to date
+  git clone https://github.com/caiogondim/bullet-train.zsh ~/code/bullet-train.zsh
+
+  # Link to the oh-my-zsh themes dir
+  ln -s ~/code/bullet-train.zsh/ ~/.oh-my-zsh/custom/themes/
+}
+
+##############################################
+# Script                                     #
+##############################################
 # Exit after errors and print commands
 set -e -v
 
@@ -139,6 +155,9 @@ pip3 install "${python3_packages[@]}"
 for not_dot in $not_dots; do
   mkdir -p ~/$not_dot
 done
+
+# Needs ~/code to be there
+install_bullet_train
 
 # Clone dotfiles to ~/.dotfiles
 git clone https://github.com/mshenfield/dotfiles ~/.dotfiles
