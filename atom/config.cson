@@ -9,7 +9,7 @@
     disabledPackages: [
       "linter"
     ]
-    projectHome: "/Users/mshenfield/code"
+    projectHome: "/Users/mshenfield/Code"
     reopenProjectMenuCount: 5
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
@@ -25,17 +25,10 @@
     pylsPlugins:
       pydocstyle:
         enabled: true
-  "linter-eslint":
-    fixOnSave: true
-    useGlobalEslint: true
-  "linter-flake8":
-    executablePath: "/Users/mshenfield/.pyenv/shims/flake8"
   "project-folder":
     projectRootDirectories: [
-      "~/code"
+      "~/Code"
     ]
-  "project-plus":
-    projectHome: "~/eventbrite"
   "spell-check":
     addKnownWords: true
     excludedGrammars: [
@@ -49,9 +42,6 @@
       "text.plain"
       "text.plain.null-grammar"
       "text.restructuredtext"
-    ]
-    knownWords: [
-      "Eventbrite"
     ]
   "tree-view":
     hideVcsIgnoredFiles: true

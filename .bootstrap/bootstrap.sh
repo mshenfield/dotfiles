@@ -21,11 +21,11 @@ function install_xcode() {
 # Install the Bullet Train zsh theme
 function install_bullet_train() {
   # Clone or update the bullet train theme
-  git clone https://github.com/caiogondim/bullet-train.zsh ~/code/bullet-train.zsh || \
-  pushd ~/code/bullet-train.zsh && git pull && popd
+  git clone https://github.com/caiogondim/bullet-train.zsh ~/Code/bullet-train.zsh || \
+  pushd ~/Code/bullet-train.zsh && git pull && popd
 
   # Link the theme into the oh-my-zsh custom themes directory
-  ln -sf ~/code/bullet-train.zsh/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/
+  ln -sf ~/Code/bullet-train.zsh/bullet-train.zsh-theme ~/.oh-my-zsh/custom/themes/
 }
 
 ##############################################
@@ -116,7 +116,7 @@ python3_packages=(
 
 # ~ - Extra not-dot home directories
 not_dots=(
-  # I keep my code in ~/code
+  # I keep my code in ~/Code
   code
 )
 
@@ -159,18 +159,17 @@ for not_dot in $not_dots; do
   mkdir -p ~/$not_dot
 done
 
-# Clone or pull dotfiles to ~/.dotfiles
-git clone https://github.com/mshenfield/dotfiles ~/.dotfiles ||
-pushd ~/.dotfiles && git pull && popd
+# Clone or pull dotfiles to ~/Code/dotfiles
+git clone https://github.com/mshenfield/dotfiles ~/Code/dotfiles ||
+pushd ~/Code/dotfiles && git pull && popd
 
 # MacOS defaults
-source ~/.dotfiles/.bootstrap/macos-defaults.sh
+source ~/Code/dotfiles/.bootstrap/macos-defaults.sh
 
-# Symlink the actual dotfiles. All files/folders starting w/ a dot are
-# automatically ignored by `rcup`, and the directory defaults to ~/.dotfiles
-rcup -x README.md
+# Symlink the actual dotfiles. ".bootstrap" is automatically ignored
+rcup -d ~/Code/dotfiles -x README.md
 
-# Requires ~/code and ~/.oh-my-zsh/themes
+# Requires ~/Code and ~/.oh-my-zsh/themes
 install_bullet_train
 
 # Optionally restart

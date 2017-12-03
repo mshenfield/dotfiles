@@ -286,7 +286,7 @@ sudo mdutil -E / > /dev/null
 ###############################################################################
 
 # Symlink in a dynamic profile for most settings http://iterm2.com/documentation-dynamic-profiles.html
-ln -sf ~/.dotfiles/.bootstrap/iterm2/dynamic-profiles.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/profiles.json
+ln -sf ~/Code/dotfiles/.bootstrap/iterm2/dynamic-profiles.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/profiles.json
 
 # Set the default profile to our "Driver" dynamic profile
 defaults write com.googlecode.iterm2 "Default Bookmark Guid" -string FBE252EF-A051-41B2-B701-FB0CD8FC5789

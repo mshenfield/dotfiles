@@ -4,7 +4,7 @@ Reproducing my MacOS setup since 2017.
 ## Installation
 `sh -c "$(curl https://raw.githubusercontent.com/mshenfield/dotfiles/master/.bootstrap/bootstrap.sh)"`
 
-The installation script installs this repository into `~/.dotfiles`, symlinks my dotfiles and installs the command line utilities and MacOS applications I use consistently:
+The installation script installs this repository into `~/Code/dotfiles`, symlinks my dotfiles and installs the command line utilities and MacOS applications I use consistently:
 
 * [Atom](https://atom.io) - a hackable text editor with [my settings](atom) and [preferred packages](.bootstrap/bootstrap.sh#L72)
 * [Firefox Nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly) - a web browser that you can pat yourself on the back about
