@@ -114,12 +114,6 @@ python3_packages=(
   python-language-server
 )
 
-# ~ - Extra not-dot home directories
-not_dots=(
-  # I keep my code in ~/Code
-  code
-)
-
 # XCode
 install_xcode
 
@@ -154,10 +148,8 @@ apm-beta install --production "${atom_packages[@]}"
 # Python3
 pip3 install "${python3_packages[@]}"
 
-# not-dot directories
-for not_dot in $not_dots; do
-  mkdir -p ~/$not_dot
-done
+# I keep my code in ~/Code
+mkdir ~/Code
 
 # Clone or pull dotfiles to ~/Code/dotfiles
 git clone https://github.com/mshenfield/dotfiles ~/Code/dotfiles ||

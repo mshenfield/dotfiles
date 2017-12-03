@@ -20,14 +20,13 @@ The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thought
 * Set file extensions to to be opened with `Atom` (json, yaml, py, rb, txt, md, sh, zsh)
 * [`direnv`](https://direnv.net/) - configure to automatically shell into `pipenv` when `cd`ing into a `Pipenv` directory
 * Turn on [night shift](https://support.apple.com/en-us/HT207513)
-* Automatically enable accessibility access for Spectacle.app
-* Configure Spectacle to start at login and run as background app
 * Login options
   * Custom icon on login screen
   * Show username and password
   * Disallow guest users
   * Disable fast switching menu item
 * [Tap to click](.bootstrap/macos-defaults.sh#L78) doesn't work
+* Read defaults from a single plist or custom flat file
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
