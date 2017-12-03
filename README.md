@@ -10,7 +10,8 @@ The installation script installs this repository into `~/.dotfiles`, symlinks my
 * [Firefox Nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly) - a web browser that you can pat yourself on the back about
 * [iTerm2](https://iterm2.com/) - a fancy(er) terminal emulator for MacOS with [nice defaults](.bootstrap/macos-defaults.sh#L288) and a [custom default profile](.bootstrap/iterm2/dynamic-profiles.json)
 * [oh-my-zsh](http://ohmyz.sh/) - a community driven zsh framework, with sensible [installation](.bootstrap/bootstrap.sh#L23) and [config](zshrc)[uration](oh-my-zsh/custom)
-* [MacOS defaults](.bootstrap/defaults.sh) - includes [minimal tray icons](.bootstrap/macos-defaults.sh#L48-L64)
+* [MacOS defaults](.bootstrap/defaults.sh) - including [minimal tray icons](.bootstrap/macos-defaults.sh#L48-L64)
+* [Pipenv](https://docs.pipenv.org/) - the way Python package management should work, with a sneaky [global](gitconfig#L3) [gitignore](gitignore) that makes it easy to use on older projects
 
 The actual symlinking of dotfiles is done by [Thoughtbot's `rcm`](http://thoughtbot.github.io/rcm/rcm.7.html). The [.bootstrap](.bootstrap) directory and [README](README.md) are excluded from symlinking.
 
