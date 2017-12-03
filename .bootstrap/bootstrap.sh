@@ -52,6 +52,8 @@ taps=(
 
 # Homebrew - packages to install via `brew install <formula>`
 formulas=(
+  # A fancy ls
+  exa
   # Going to format an image at some point
   imagemagick
   # Best Python REPL
