@@ -1,5 +1,3 @@
-echo "Getting things ready..."
-
 export ZSH=/Users/mshenfield/.oh-my-zsh
 
 ZSH_THEME="bullet-train"
