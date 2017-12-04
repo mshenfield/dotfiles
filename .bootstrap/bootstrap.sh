@@ -149,7 +149,7 @@ apm-beta install --production "${atom_packages[@]}"
 pip3 install "${python3_packages[@]}"
 
 # I keep my code in ~/Code
-mkdir ~/Code
+mkdir -p ~/Code
 
 # Clone or pull dotfiles to ~/Code/dotfiles
 git clone https://github.com/mshenfield/dotfiles ~/Code/dotfiles ||
