@@ -139,7 +139,7 @@ done
 
 # Casks
 for cask in "${casks[@]}"; do
-  brew cask install $cask
+  brew cask install --force $cask
 done
 
 # Atom
