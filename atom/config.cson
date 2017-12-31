@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "b96cb295-a514-43d9-a58a-696fe6a56cf6"
   "atom-rst-preview-docutils":
     rst2html: "rst2html.py"
   "character-table":
@@ -18,7 +21,8 @@
       "solarized-dark-syntax"
     ]
     titleBar: "hidden"
-  editor: {}
+  editor:
+    showLineNumbers: false
   "exception-reporting":
     userId: "c6eed4e5-0e1b-4b3e-9e3d-fce7fd88970c"
   "ide-python":

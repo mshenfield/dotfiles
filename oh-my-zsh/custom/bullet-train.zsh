@@ -5,6 +5,7 @@ BULLETTRAIN_PROMPT_ORDER=(
   screen
   dir
   virtualenv
+  nvm
   git
   cmd_exec_time
 )

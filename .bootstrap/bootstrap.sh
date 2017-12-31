@@ -56,14 +56,14 @@ formulas=(
   exa
   # Going to format an image at some point
   imagemagick
-  # Best Python REPL
-  ipython
-  # The way Python package management should work
-  pipenv
   # Updated Python2 for legacy apps and libs
   python2
   # Groovy Python3 for cool new apps and libs
   python3
+  # Best Python REPL
+  ipython
+  # The way Python package management should work
+  pipenv
   # rc file manager
   thoughtbot/formulae/rcm
   # Spotify command line API
@@ -75,23 +75,7 @@ formulas=(
 # Homebrew Cask - applications and fonts to install via `brew cask install <cask>`
 casks=(
   # atom.io Beta channel
-  atom-beta
-  # Firefox nightly build 🤙
-  firefoxnightly
-  # Default iTerm2 font w/ Powerline support
-  font-droid-sans-mono-for-powerline
-  # Terminal emulator with extra features and configuration options
-  iterm2
-  # Windows management for cleaner workspaces
-  spectacle
-  # Preferred music consumption apparatus
-  spotify
-)
-
-# Atom packages
-# Note: This only includes top level packages, I'm letting Atom install any
-# package dependencis
-atom_packages=(
+  atom-beautify 
   # Quick notes in Atom
   atom-notes
   # The best Atom rST preview
