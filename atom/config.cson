@@ -1,14 +1,29 @@
 "*":
   "atom-beautify":
     general:
-      _analyticsUserId: "b96cb295-a514-43d9-a58a-696fe6a56cf6"
+      _analyticsUserId: "95784ebd-e5d2-47df-8791-f00489174b78"
+  "atom-ide-ui":
+    "atom-ide-code-format": {}
+    "atom-ide-console":
+      maximumMessageCount: 1000
+      maximumSerializedHistory: 50
+    "atom-ide-diagnostics-ui": {}
+    "atom-ide-find-references":
+      defaultLocationForPane: "right"
   "atom-rst-preview-docutils":
     rst2html: "rst2html.py"
   "character-table":
     enableCharacterMnemonics: true
+  "color-picker":
+    triggerKey: "E"
+    uppercaseColorValues: true
   core:
     audioBeep: false
     closeDeletedFileTabs: true
+    customFileTypes:
+      "source.sql": [
+        "sql.j2"
+      ]
     disabledPackages: [
       "linter"
     ]
@@ -23,12 +38,26 @@
     titleBar: "hidden"
   editor:
     showLineNumbers: false
+    showInvisibles: true
   "exception-reporting":
     userId: "c6eed4e5-0e1b-4b3e-9e3d-fce7fd88970c"
+  "git-blame":
+    colorCommitAuthors: true
+    columnWidth: 255
+    ignoreWhiteSpaceDiffs: true
+    showHash: false
+    showOnlyLastNames: true
+    useCustomUrlTemplateIfStandardRemotesFail: true
   "ide-python":
     pylsPlugins:
-      pydocstyle:
-        enabled: true
+      pycodestyle:
+        enabled: false
+      pydocstyle: {}
+  "language-restructuredtext":
+    tabLength: 4
+  "linter-ui-default": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
   "project-folder":
     projectRootDirectories: [
       "~/Code"
@@ -51,11 +80,64 @@
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
-".python.source":
+".basic.html.text":
+  editor:
+    showIndentGuide: false
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: false
+    tabType: "soft"
+".console.python.text":
+  editor:
+    tabLength: 4
+".css.source":
+  editor:
+    scrollPastEnd: false
+    showIndentGuide: false
+    tabType: "soft"
+".js.jsx.react.source":
   editor:
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
     tabType: "soft"
+".js.jsx.source":
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+".js.source.subtlegradient":
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+".makefile.source":
+  editor:
+    showInvisibles: true
+    tabLength: 8
+    tabType: "soft"
+".python.regexp.source":
+  editor:
+    preferredLineLength: 120
+".python.source":
+  editor:
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+".python.text.traceback":
+  editor:
+    tabLength: 4
 ".restructuredtext.text":
   editor:
     showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+".source.sql":
+  editor:
+    tabLength: 4
+    tabType: "soft"

@@ -14,3 +14,10 @@ export PATH=$PATH:~/.gem/ruby/2.3.0/bin
 
 ### We're in development, of course. Require by create-react-app
 NODE_ENV=development
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Ruby Env
+eval "$(rbenv init -)"
